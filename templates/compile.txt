@@ -1,0 +1,126 @@
+
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ python -m venv virt
+
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ ls
+virt/
+
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ python source/Scripts/activate
+C:\Users\skull\AppData\Local\Programs\Python\Python39\python.exe: can't open file 'C:\Users\skull\desktop\NFT-G\source\Scripts\activate': [Errno 2] No such file or directory
+
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ =>source virt/Scripts/activate
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ pip freeze
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ pip install flask
+Collecting flask
+  Using cached Flask-2.0.2-py3-none-any.whl (95 kB)
+Collecting Jinja2>=3.0
+  Using cached Jinja2-3.0.3-py3-none-any.whl (133 kB)
+Collecting Werkzeug>=2.0
+  Using cached Werkzeug-2.0.2-py3-none-any.whl (288 kB)
+Collecting itsdangerous>=2.0
+  Using cached itsdangerous-2.0.1-py3-none-any.whl (18 kB)
+Collecting click>=7.1.2
+  Using cached click-8.0.3-py3-none-any.whl (97 kB)
+Collecting colorama
+  Using cached colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting MarkupSafe>=2.0
+  Using cached MarkupSafe-2.0.1-cp39-cp39-win_amd64.whl (14 kB)
+Installing collected packages: MarkupSafe, colorama, Werkzeug, Jinja2, itsdangerous, click, flask
+Successfully installed Jinja2-3.0.3 MarkupSafe-2.0.1 Werkzeug-2.0.2 click-8.0.3 colorama-0.4.4 flask-2.0.2 itsdangerous-2.0.1
+WARNING: You are using pip version 21.1.3; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\skull\desktop\nft-g\virt\scripts\python.exe -m pip install --upgrade pip' command.
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ pip freeze
+click==8.0.3
+colorama==0.4.4
+Flask==2.0.2
+itsdangerous==2.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+Werkzeug==2.0.2
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ touch index.py
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ code .
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+=> $ export FLASK_ENV=development
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+=> $ export FLASK_APP=index.py
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ => flask run
+ * Serving Flask app 'index.py' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-994-255
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ flask run
+ * Serving Flask app 'index.py' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-994-255
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [08/Jan/2022 05:17:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Jan/2022 05:17:28] "GET /favicon.ico HTTP/1.1" 404 -
+ * Detected change in 'C:\\Users\\skull\\Desktop\\NFT-G\\index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-994-255
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [08/Jan/2022 05:22:57] "GET /pett HTTP/1.1" 404 -
+127.0.0.1 - - [08/Jan/2022 05:23:48] "GET /name HTTP/1.1" 404 -
+127.0.0.1 - - [08/Jan/2022 05:24:11] "GET /name/pett HTTP/1.1" 404 -
+127.0.0.1 - - [08/Jan/2022 05:24:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Jan/2022 05:26:03] "GET /user HTTP/1.1" 404 -
+127.0.0.1 - - [08/Jan/2022 05:26:10] "GET /user/april HTTP/1.1" 200 -
+127.0.0.1 - - [08/Jan/2022 05:26:25] "GET /user/Paul HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\skull\\Desktop\\NFT-G\\index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-994-255
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [08/Jan/2022 05:32:39] "GET / HTTP/1.1" 200 -
+(virt)
+skull@DESKTOP-ENFPVK3 MINGW64 ~/desktop/NFT-G
+$ flask run
+ * Serving Flask app 'index.py' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-994-255
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\skull\\Desktop\\NFT-G\\index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-994-255
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [08/Jan/2022 05:41:47] "GET /user HTTP/1.1" 404 -
+127.0.0.1 - - [08/Jan/2022 05:41:56] "GET /user/jonh HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\skull\\Desktop\\NFT-G\\index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-994-255
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [08/Jan/2022 05:43:58] "GET /user/jonh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Jan/2022 05:47:28] "GET /user/jonh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Jan/2022 05:52:40] "GET / HTTP/1.1" 200 -
+
