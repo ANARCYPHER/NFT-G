@@ -124,3 +124,7 @@ $ flask run
 127.0.0.1 - - [08/Jan/2022 05:47:28] "GET /user/jonh HTTP/1.1" 200 -
 127.0.0.1 - - [08/Jan/2022 05:52:40] "GET / HTTP/1.1" 200 -
 
+source virt/Scripts/activate
+=> $ export FLASK_ENV=development
+
+=> $ export FLASK_APP=index.py
